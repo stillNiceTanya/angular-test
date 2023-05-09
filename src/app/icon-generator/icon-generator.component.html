@@ -1,0 +1,9 @@
+<div class="generator-container">
+  <div *ngIf="icon" class="generator-icon">
+    <fa-icon [icon]="icon"></fa-icon>
+  </div>
+  <button (click)="generateIcon()">
+    <span *ngIf="isGenerating">Generating...</span>
+    <span *ngIf="!isGenerating">Generate icon</span>
+  </button>
+</div>
